@@ -1,0 +1,11 @@
+<h1>Stations</h1>
+
+  <p>
+    Please choose a departure station
+  </p>
+ 
+  <p>
+    <%= select_tag(:station_id, options_for_select(@stations)) %>
+  </p>
+
+<% puts "The selected station is: #{station_id}"
